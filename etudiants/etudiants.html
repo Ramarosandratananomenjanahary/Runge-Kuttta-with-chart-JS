@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progression Étudiant</title>
+  <link rel="stylesheet" href="etudiants.css" />
+  <script src="../chartJS/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Simulation de progression avec Runge-Kutta</h1>
+    <label>Niveau initial (y₀):</label>
+    <input placeholder="(0 à 10)" type="number" id="y0" value="" step="0.1" />
+    
+    <label>Taux de progression (ex : 0.5 pour f(t, y) = 0.5*y):</label>
+    <input placeholder="0 à 1" type="number" id="rate" value="" step="0.1" />
+
+    <button onclick="simuler()">Simuler la progression</button>
+
+    <div id="resultat"></div>
+
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="etudiants.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution de la charge de travail</title>
+  <link rel="stylesheet" href="enseignants.css">
+  <script src="../chartJS/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <h2>Simulation de la charge de travail (Runge-Kutta)</h2>
+
+  <label>Charge initiale (heures) :</label>
+  <input placeholder="1" type="number" id="y0" value="5" step="0.1">
+
+  <label>Nombre de semaines :</label>
+  <input  placeholder="2" type="number" id="weeks" value="16" step="1">
+
+  <label>Équation d'augmentation et de ralentissement (ex: 2*t - 0.1*y) :</label>
+  <input  placeholder="equation" type="text" id="equation" value="2*t - 0.1*y">
+
+  <button onclick="generateChart()">Générer</button>
+
+  <canvas id="chart"></canvas>
+
+  <script src="enseignats.js"></script>
+
+</body>
+</html>

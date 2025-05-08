@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tableau-de-bord/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Projet IS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>Simulation</h2>
+            </div>
+            <div class="user">
+                <img src="img/user-astronaut.svg" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-th-large"></i>0.
+                        <div>Tableau de bord</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="etudiants/etudiants.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Etudiants</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="enseignants/enseignants.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>Enseignants</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="employeurs/employeurs.html">
+                        <i class="fas fa-users"></i>
+                        <div>Employeurs</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="salaire/salaire.html">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Salaire</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 class="Exemple">Exemple de la modèle du simulation utiliser</h1>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Salaire (12 mois passé)</h2>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="chart" id="doughnut-chart">
+                    <h2>Employeurs</h2>
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="chartJS/chart.umd.min.js"></script>
+    <script src="tableau-de-bord/chart1.js"></script>
+    <script src="tableau-de-bord/chart2.js"></script>
+    
+</html>

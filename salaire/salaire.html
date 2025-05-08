@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prédiction d'Épargne (Runge-Kutta)</title>
+  <link rel="stylesheet" href="salaire.css">
+  <script src="../chartJS/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Prédiction d'Épargne avec Runge-Kutta</h1>
+    <div class="inputs">
+      <input type="number" id="initial" placeholder="Épargne initiale (Ar)">
+      <input type="number" id="depot" placeholder="Dépôt mensuel (Ar)">
+      <input type="number" id="taux" placeholder="Taux d'intérêt annuel (%)">
+      <input type="number" id="mois" placeholder="Nombre de mois">
+      <button onclick="simulerEpargne()">Simuler</button>
+    </div>
+    <canvas id="graphique" width="400" height="400"></canvas>
+  </div>
+
+  <script src="salaire.js"></script>
+</body>
+</html>

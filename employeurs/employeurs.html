@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution de la Charge de Travail d’un Enseignant</title>
+  <link rel="stylesheet" href="employeurs.css">
+  <script src="../chartJS/chart.umd.min.js"></script>
+</head>
+<body>
+        <div class="container">
+            <h1>Simulation de la Charge de Travail d’un Enseignant</h1>
+            <div class="inputs">
+              <input type="number" id="y0" placeholder="Charge initiale (heures)">
+              <input type="number" id="semaines" placeholder="Nombre de semaines">
+              <button onclick="simulerCharge()">Simuler</button>
+            </div>
+            <canvas id="graphique" width="400" height="400"></canvas>
+        </div>
+
+    </div>
+
+  <script src="employeurs.js"></script>
+</body>
+</html>
